@@ -1,0 +1,143 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('background1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Headers */
+header {
+    margin-bottom: 20px;
+    border-bottom: 3px solid #f8f9fa;
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card img {
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-title {
+    font-weight: bold;
+    color: #333;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.card .btn {
+
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.card .btn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+/* Form */
+#ingredient-form {
+    max-width: 600px;
+    margin: auto;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-group input {
+    border: 2px solid #e74c3c;
+    border-radius: 5px;
+    padding: 10px;
+    width: 80%;
+}
+
+.input-group button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.input-group button:hover {
+    background-color: #c0392b;
+}
+
+.list-group {
+    margin-top: 10px;
+}
+
+.list-group-item {
+    background-color: rgba(231, 76, 60, 0.1);
+    border: none;
+    border-radius: 5px;
+    margin: 5px 0;
+    padding: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #f8f9fa;
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
+footer p {
+    color: #888;
+}
+
+/* Buttons */
+button {
+    border-radius: 5px;
+}
+
+/* Recipe Detail */
+.recipe-detail img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.recipe-detail h3 {
+    color: #e74c3c;
+}
+
+.recipe-detail ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.recipe-detail ul li {
+    margin: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #ingredient-form {
+        width: 90%;
+    }
+    .card img {
+        max-height: 150px;
+    }
+}
